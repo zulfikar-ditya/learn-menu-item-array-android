@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="20dp"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="92dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginVertical="30dp"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:textFontWeight="1000"
+                android:gravity="center">
+
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Username"
+                android:textFontWeight="10000"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:hint="Username"
+                android:inputType="text"
+                android:layout_marginVertical="10dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textFontWeight="1000"
+                android:text="Username"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="381dp"
+                android:layout_marginVertical="10dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="20dp">
+            <Button
+                android:onClick="auth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login">
+
+            </Button>
+
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
